@@ -6,6 +6,12 @@
 let express = require("express");
 // create applicatoin object
 let app = express();
+
+// take care of /test request
+app.get("/test", function (req, res) {
+    res.send("Hello Test");
+});
+
 // take care path / requirement
 app.get("/", function (req, res) {
     res.send("Hello Node.js");
