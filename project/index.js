@@ -9,7 +9,7 @@ let app = express();
 
 // take care of /test request
 app.get("/test", function (req, res) {
-    res.send("Hello Test");
+    res.send("<b>Hello</b> Test <script>alert('test');</script>");
 });
 
 // take care path / requirement
